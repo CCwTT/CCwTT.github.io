@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wentao Chen's academic homepage">
+  <title>Wentao Chen</title>
+  <!-- The same AcademicPages stylesheet used by the reference site. -->
+  <link rel="stylesheet" href="https://chenxinan-fdu.github.io/assets/css/main.css">
+  <link rel="stylesheet" href="https://chenxinan-fdu.github.io/assets/css/academicons.css">
+  <style>
+    .author__avatar .avatar-placeholder {
+      display: grid;
+      place-items: center;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: #e7eaeb;
+      color: #6b7377;
+      font-family: Georgia, serif;
+      font-size: 3.5em;
+      font-weight: bold;
+    }
+    .sidebar div.author__avatar { width: 180px; max-width: 100%; border-radius: 0; }
+    .sidebar div.author__avatar > img.author__avatar { display: block; width: 100%; height: auto; border-radius: 0; }
+    @media (max-width: 64em) { .author__avatar .avatar-placeholder { width: 120px; height: 120px; font-size: 1.25em; } }
+    .publication-list { margin: 0; padding: 0; list-style: none; }
+    .page__content > h1 { margin-top: 1.25em; }
+    .publication-list > li { margin: 0 0 2em; }
+    .publication-title { display: block; margin: 0 0 .15em; color: #34383b; font-size: 1.06em; font-weight: 700; line-height: 1.35; }
+    .publication-title:hover { color: #34383b; text-decoration: underline; }
+    .page__content .publication-authors { margin: 0; color: #3f4346; font-size: 1em; line-height: 1.45; }
+    .publication-authors strong { color: #34383b; font-weight: 700; }
+    .page__content .publication-meta { display: flex; align-items: center; flex-wrap: wrap; gap: .55em; margin-top: .18em; }
+    .publication-venue, .publication-actions a { display: inline-block; border-radius: 5px; font-size: .82em; font-weight: 600; line-height: 1.2; }
+    .publication-venue { padding: .34em .68em; color: #375d95; background: #eaf0f9; }
+    .publication-actions { display: flex; gap: .55em; }
+    .publication-actions a, .publication-bib summary { display: inline-block; padding: .31em .68em; border-radius: 5px; color: #52617a; background: #f7f8fa; border: 1px solid #d7dce4; font-size: .82em; font-weight: 600; line-height: 1.2; }
+    .publication-actions a:hover, .publication-bib summary:hover { color: #375d95; background: #eef2f7; text-decoration: none; }
+    .publication-bib { position: relative; }
+    .publication-bib summary { list-style: none; cursor: pointer; }
+    .publication-bib summary::-webkit-details-marker { display: none; }
+    .publication-bib pre { position: absolute; z-index: 2; width: min(610px, 78vw); overflow-x: auto; margin: .45em 0 0; padding: .8em; color: #313436; background: #fff; border: 1px solid #d7dce4; box-shadow: 0 4px 12px rgba(0, 0, 0, .16); font-size: .78em; line-height: 1.45; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <div class="masthead">
+    <div class="masthead__inner-wrap">
+      <div class="masthead__menu">
+        <nav id="site-nav" class="greedy-nav" aria-label="Main navigation">
+          <ul class="visible-links">
+            <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about">Homepage</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div id="main" role="main">
+    <div class="sidebar sticky">
+      <div itemscope itemtype="http://schema.org/Person">
+        <!-- Replace this placeholder with your own photo when ready. -->
+        <div class="author__avatar"><img class="author__avatar" src="images/avatar.jpg" alt="Wentao Chen"></div>
+        <div class="author__content">
+          <h3 class="author__name">Wentao Chen</h3>
+          <h3 class="author__name">陈文韬</h3>
+          <p class="author__bio">Undergraduate Student at Tianjin University</p>
+        </div>
+        <div class="author__urls-wrapper">
+          <button class="btn btn--inverse" type="button" onclick="location.href='mailto:3023244174@tju.edu.cn'">Follow</button>
+          <ul class="author__urls social-icons">
+            <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Tianjin, China</li>
+            <li><a href="mailto:3023244174@tju.edu.cn"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> 3023244174@tju.edu.cn</a></li>
+            <li><a href="https://x.com/fiddler_tiddler"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+            <li><a href="https://github.com/CCwTT"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+            <li><a href="https://blog.csdn.net/TRexFondOfRice/article/"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+      <div class="page__inner-wrap">
+        <section class="page__content" itemprop="text">
+          <div id="about">
+            <p>I am an undergraduate student at Tianjin University and will pursue graduate study at Fudan University. I will also join OpenMOSS at the Shanghai Innovation Institute as a research intern. My research interests lie in natural language processing and large language models.</p>
+          </div>
+
+          <h1 id="news">News</h1>
+          <ul>
+            <li><strong>[Sept. 2026]</strong> I joined the FudanNLP Lab as an incoming Ph.D. student.</li>
+          </ul>
+
+          <h1 id="publications">Publications</h1>
+          <ul class="publication-list">
+            <li>
+              <a class="publication-title" href="https://openreview.net/forum?id=IZMtun0Rgb">Cognitive Honeypots: Auditing Observable Evidence of Scheming-Related Behavior in Large Language Models</a>
+              <p class="publication-authors">Hao Wang, <strong>Wentao Chen</strong>, Deyi Xiong</p>
+              <div class="publication-meta">
+                <span class="publication-venue">EMNLP 2026</span>
+                <div class="publication-actions">
+                  <details class="publication-bib"><summary>[Bib]</summary><pre>@inproceedings{wang2026cognitive,
+  title = {Cognitive Honeypots: Auditing Observable Evidence of Scheming-Related Behavior in Large Language Models},
+  author = {Wang, Hao and Chen, Wentao and Xiong, Deyi},
+  booktitle = {Conference on Empirical Methods in Natural Language Processing},
+  year = {2026},
+  url = {https://openreview.net/forum?id=IZMtun0Rgb}
+}</pre></details>
+                  <a href="https://openreview.net/pdf?id=IZMtun0Rgb">[pdf]</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <h1 id="honors-and-awards">Honors and Awards</h1>
+          <ul>
+            <li><strong>[Dec. 2025]</strong> National Scholarship for Undergraduate Students</li>
+            <li><strong>[Oct. 2025]</strong> Bronze Medal, ICPC Asia Chengdu Regional Contest</li>
+            <li><strong>[May 2024]</strong> NITORI International Scholarship</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </div>
+
+  <div class="page__footer"><footer><div class="page__footer-copyright">© 2026 Wentao Chen. Powered by Jekyll &amp; AcademicPages.</div></footer></div>
+</body>
+</html>
