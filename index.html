@@ -21,38 +21,8 @@
       font-size: 3.5em;
       font-weight: bold;
     }
-    .sidebar div.author__avatar { width: 180px; max-width: 100%; border-radius: 0; }
-    .sidebar div.author__avatar > img.author__avatar { display: block; width: 100%; height: auto; border-radius: 0; }
+    .profile_box .author__avatar img.author__avatar { border-radius: 0; }
     .page__footer { position: static; margin-top: 3em; }
-    @media (max-width: 64em) {
-      .sidebar.sticky > div[itemscope] {
-        display: grid;
-        grid-template-columns: 90px minmax(0, 1fr) auto;
-        column-gap: 16px;
-        align-items: start;
-      }
-      .sidebar.sticky div.author__avatar {
-        grid-column: 1;
-        grid-row: 1;
-        width: 90px;
-        margin: 0;
-      }
-      .sidebar.sticky div.author__avatar > img.author__avatar {
-        width: 90px;
-        height: 120px;
-        object-fit: cover;
-      }
-      .sidebar.sticky .author__content {
-        grid-column: 2;
-        margin: 0;
-      }
-      .sidebar.sticky .author__urls-wrapper {
-        grid-column: 3;
-        margin: 0;
-      }
-      .sidebar.sticky .author__urls-wrapper .btn { width: auto; margin: 0; white-space: nowrap; }
-      .sidebar.sticky .author__urls { display: none; }
-    }
     @media (max-width: 64em) { .author__avatar .avatar-placeholder { width: 120px; height: 120px; font-size: 1.25em; } }
     .publication-list { margin: 0; padding: 0; list-style: none; }
     .page__content > h1 { margin-top: 1.25em; }
@@ -88,7 +58,7 @@
 
   <div id="main" role="main">
     <div class="sidebar sticky">
-      <div itemscope itemtype="http://schema.org/Person">
+      <div itemscope itemtype="http://schema.org/Person" class="profile_box">
         <!-- Replace this placeholder with your own photo when ready. -->
         <div class="author__avatar"><img class="author__avatar" src="images/avatar.jpg" alt="Wentao Chen"></div>
         <div class="author__content">
